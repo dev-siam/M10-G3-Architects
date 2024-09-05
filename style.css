@@ -99,7 +99,7 @@ nav ul {
   align-items: center;
 }
 .quick-list {
-    padding-bottom: 0px;
+  padding-bottom: 0px;
 }
 .img-container {
   display: grid;
@@ -119,13 +119,85 @@ nav ul {
 .text-container .btn {
   text-align: left;
 }
-.span1{
-    color: var(--Dark-03);
-    font-weight: 500;
+.span1 {
+  color: var(--Dark-03);
+  font-weight: 500;
 }
-.span2{
-    color: #ff900e;
-  
+.span2 {
+  color: #ff900e;
+}
+
+/* ======================== */
+/* Features you will love & enjoy */
+.feature-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin: 130px auto;
+  padding: 0 20px;
+  /* border: 1px dotted red; */
+}
+.feature-list-container {
+  width: 48%;
+  text-align: left;
+  display: grid;
+  gap: 20px;
+}
+.feature-heading {
+  border-left: 5px solid var(--btn-bg);
+  padding-left: 15px;
+  color: var(--Dark-01);
+}
+.feature-list-container > p,
+h2 {
+  text-align: left;
+}
+.feature-list-container h2 {
+  font-weight: 600;
+}
+.feature-img-container {
+  position: relative;
+  width: 48%;
+}
+
+/* ======================== */
+.feature-card-container {
+  display: grid;
+  gap: 20px;
+}
+.feature-card {
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+.feature-card h3 {
+  margin-bottom: 10px;
+  /* border-bottom: 1px solid var(--btn-bg);  */
+  border-radius: 5px;
+  padding: 2px;
+}
+h3 i {
+  padding-right: 10px;
+  color: var(--btn-bg);
+  font-size: 20px;
+}
+
+.experience {
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: var(--btn-bg);
+}
+.experience h2 {
+  color: white;
+  text-align: center;
+}
+.experience p {
+  color: white;
+  text-align: center;
 }
 
 /* Responsive Section start */
@@ -145,29 +217,85 @@ nav ul {
     font-size: 30px;
   }
   /* =========== */
-  .quick-list{
+  .quick-list {
     display: flex;
     flex-direction: column;
   }
-  .img-container, .text-container {
+  .img-container,
+  .text-container,
+  .feature-list-container,
+  .feature-img-container {
     width: 100%;
   }
-  
+  .feature-list {
+    flex-direction: column;
+    gap: 75px;
+  }
+  .feature-img-container {
+    padding: 0 20px;
+  }
+  .experience {
+    display: none;
+  }
 }
 
 /* ======Tablet================== */
 @media screen and (min-width: 577px) and (max-width: 768px) {
-    h1 {
+  h1 {
     font-size: 40px;
   }
-  .quick-list{
+  nav{
+  display: none;
+
+  }
+  .menu {
+  display: block;
+}
+  .quick-list {
     display: flex;
     flex-direction: column;
   }
-  .img-container, .text-container {
+  .img-container,
+  .text-container,
+  .feature-list-container,
+  .feature-img-container {
     width: 100%;
   }
-  .img-container{
+  .img-container {
     padding: 0 30px;
+  }
+  .feature-list {
+    flex-direction: column;
+    gap: 75px;
+  }
+  .feature-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .feature-img-container {
+    padding: 0 20px;
+  }
+  .experience {
+    display: none;
+  }
+}
+
+/* ====== Desktop================== */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .feature-list {
+    flex-direction: column;
+    gap: 75px;
+  }
+  .feature-list-container,
+  .feature-img-container {
+    width: 100%;
+  }
+  .feature-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .feature-img-container {
+    padding: 0 50px;
+  }
+  .experience {
+    display: none;
   }
 }
