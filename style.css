@@ -200,6 +200,64 @@ h3 i {
   text-align: center;
 }
 
+/* ====== achievements ================= */
+
+.achievements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 130px auto;
+  padding: 0 20px;
+}
+.achievements-heading h2 {
+  text-align: center;
+}
+.achievements-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.achievement-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 50px;
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+}
+.achievement-card img {
+  width: 45px;
+  height: 45px;
+}
+
+.achievement-card p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.card-1{
+    background-color: #c7f8ab88;
+}
+.card-2{
+    background-color: #e88cce75;
+}
+.card-3{
+    background-color: #a4b3ef6d;
+}
+.card-4{
+    background-color: #97e0de72;
+}
+
+
+
+
+
+
 /* Responsive Section start */
 /* ======Mobile================== */
 @media screen and (max-width: 576px) {
@@ -237,6 +295,10 @@ h3 i {
   .experience {
     display: none;
   }
+  .achievements-cards{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 /* ======Tablet================== */
@@ -244,13 +306,12 @@ h3 i {
   h1 {
     font-size: 40px;
   }
-  nav{
-  display: none;
-
+  nav {
+    display: none;
   }
   .menu {
-  display: block;
-}
+    display: block;
+  }
   .quick-list {
     display: flex;
     flex-direction: column;
@@ -277,6 +338,9 @@ h3 i {
   .experience {
     display: none;
   }
+  .achievements-cards{
+    flex-wrap: wrap;
+  
 }
 
 /* ====== Desktop================== */
@@ -298,4 +362,9 @@ h3 i {
   .experience {
     display: none;
   }
+  .achievements-cards{
+    flex-wrap: wrap;
+  }
 }
+
+/* ====== Large Desktop ================== */
