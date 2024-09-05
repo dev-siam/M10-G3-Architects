@@ -39,7 +39,7 @@ h2 {
   color: var(--Dark-02);
 }
 button {
-  padding: 20px 25px;
+  padding: 15px 25px;
   font-size: 20px;
   font-weight: 600;
   border-radius: 8px;
@@ -58,66 +58,116 @@ header {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 50px 20px;
   text-align: center;
-  border: 1px dotted red;
 }
 .nav-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-span{
-    color: white;
-    background-color: #000000da;
-    border-radius: 5px;
-    padding: 2px 5px;
+.span {
+  color: white;
+  background-color: #000000da;
+  border-radius: 5px;
+  padding: 2px 5px;
 }
 nav ul {
   display: flex;
   gap: 50px;
 }
-.menu{
-    display: none;
+.menu {
+  display: none;
 }
-.banner-text{
-    padding: 100px 0 35px 0;
+.banner-text {
+  padding: 100px 0 35px 0;
 }
-.banner-text p{
-    padding-top: 10px;
+.banner-text p {
+  padding-top: 10px;
 }
-.banner-image{
-    padding-top: 50px;
+.banner-image {
+  padding-top: 50px;
 }
 
 /* ======================== */
-/* Heading Section start */
+/* Quick list Section start */
 
+.quick-list {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+}
+.quick-list {
+    padding-bottom: 0px;
+}
+.img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  width: 48%;
+}
 
+.text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 24px;
+  width: 48%;
+}
 
+.text-container .btn {
+  text-align: left;
+}
+.span1{
+    color: var(--Dark-03);
+    font-weight: 500;
+}
+.span2{
+    color: #ff900e;
+  
+}
 
 /* Responsive Section start */
 /* ======Mobile================== */
-@media screen and (max-width: 576px){
-
-    nav ul{
-        display: none;
-    }
-    .menu{
-        display: block;
-        font-size: 20px;
-    }
-    h1{
-        font-size: 40px;
-    }
-    h2{
-        font-size: 30px;
-    }
-    
+@media screen and (max-width: 576px) {
+  nav ul {
+    display: none;
+  }
+  .menu {
+    display: block;
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  /* =========== */
+  .quick-list{
+    display: flex;
+    flex-direction: column;
+  }
+  .img-container, .text-container {
+    width: 100%;
+  }
+  
 }
 
-
 /* ======Tablet================== */
-@media screen and (min-width: 577px) and (max-width:768px) {
-    
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    h1 {
+    font-size: 40px;
+  }
+  .quick-list{
+    display: flex;
+    flex-direction: column;
+  }
+  .img-container, .text-container {
+    width: 100%;
+  }
+  .img-container{
+    padding: 0 30px;
+  }
 }
