@@ -282,8 +282,6 @@ h3 i {
 }
 .sponsor img {
   height: 50px;
-
-  filter: grayscale(100%);
 }
 .sponsor img:hover {
   filter: grayscale(0%);
