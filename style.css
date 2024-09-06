@@ -281,9 +281,13 @@ h3 i {
   overflow-y: hidden;
   scrollbar-width: thin;
 }
+
+/* 
 .sponsor::-webkit-scrollbar {
-  /* display: none; */
-}
+   display: none; 
+} 
+*/
+
 .sponsor img {
   height: 50px;
 }
