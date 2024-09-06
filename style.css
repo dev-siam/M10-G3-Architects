@@ -229,7 +229,7 @@ h3 i {
   gap: 10px;
   padding: 50px;
   border-radius: 8px;
-  border: 1px solid #ff900e;
+  /* border: 1px solid #ff900e; */
 }
 .achievement-card img {
   width: 45px;
@@ -240,23 +240,75 @@ h3 i {
   font-size: 20px;
   font-weight: 600;
 }
-.card-1{
-    background-color: #c7f8ab88;
+.card-1 {
+  background-color: #c7f8ab88;
 }
-.card-2{
-    background-color: #e88cce75;
+.card-2 {
+  background-color: #e88cce75;
 }
-.card-3{
-    background-color: #a4b3ef6d;
+.card-3 {
+  background-color: #a4b3ef6d;
 }
-.card-4{
-    background-color: #97e0de72;
+.card-4 {
+  background-color: #97e0de72;
 }
 
+/* ====== sponsors ================= */
+.sponsorship {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
 
+.sponsor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  /* flex-wrap: wrap; */
+  padding: 0 20px;
+  overflow-x: auto;
+}
+.sponsor img {
+  height: 50px;
 
+  filter: grayscale(100%);
+}
+.sponsor img:hover {
+  height: 50px;
+  filter: grayscale(0%);
+}
 
+/* ====== footer ================= */
 
+footer {
+  background-color: var(--Dark-01);
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-text h2 {
+  text-align: center;
+  color: white;
+}
+.social-media a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+  font-size: 20px;
+}
+.copyright p {
+  color: white;
+}
 
 /* Responsive Section start */
 /* ======Mobile================== */
@@ -295,9 +347,12 @@ h3 i {
   .experience {
     display: none;
   }
-  .achievements-cards{
+  .achievements-cards {
     flex-direction: column;
     flex-wrap: wrap;
+  }
+  .achievements {
+    margin: 50px auto;
   }
 }
 
@@ -338,9 +393,12 @@ h3 i {
   .experience {
     display: none;
   }
-  .achievements-cards{
+  .achievements-cards {
     flex-wrap: wrap;
-  
+  }
+  .achievements{
+    margin: 50px auto;
+  }
 }
 
 /* ====== Desktop================== */
@@ -362,7 +420,7 @@ h3 i {
   .experience {
     display: none;
   }
-  .achievements-cards{
+  .achievements-cards {
     flex-wrap: wrap;
   }
 }
