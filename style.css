@@ -279,6 +279,10 @@ h3 i {
   padding: 0 20px;
   overflow-x: auto;
   overflow-y: hidden;
+  scrollbar-width: thin;
+}
+.sponsor::-webkit-scrollbar {
+  /* display: none; */
 }
 .sponsor img {
   height: 50px;
